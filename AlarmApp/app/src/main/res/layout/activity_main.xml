@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Your Alarms"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="23sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#4e342e"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:padding="15dp"
+        android:layout_above="@id/setAlarmButton"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Set Alarm"
+        android:backgroundTint="#4e342e"
+        android:background="@drawable/button_corners"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsmedium"
+        android:id="@+id/setAlarmButton"/>
+
+
+
+</RelativeLayout>
