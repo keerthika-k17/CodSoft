@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="9dp"
+    app:cardCornerRadius="15dp"
+    android:backgroundTint="#e2f4f2"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/todoTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sample Task Title"
+            android:textColor="#4879C5"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/optionsMenu"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sample Task Description"
+            android:textColor="#212121"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="16sp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/todoTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/completedCheckBox"
+            app:layout_constraintHorizontal_bias="0" />
+
+        <TextView
+            android:id="@+id/dueTimeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Due Time: 10.30 AM"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="#212121"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/optionsMenu"
+            app:layout_constraintHorizontal_bias="0" />
+
+        <TextView
+            android:id="@+id/optionsMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="⋮"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1" />
+
+        <CheckBox
+            android:id="@+id/completedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Completed"
+            android:theme="@style/color_checkbox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/optionsMenu"
+            app:layout_constraintTop_toTopOf="@+id/descriptionTextView"
+            app:layout_constraintVertical_bias="0.354" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Tasks!"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="#3783F5"
+        android:textSize="25dp"
+        android:padding="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_above="@+id/addButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No tasks"
+        android:textColor="#212121"
+        android:id="@+id/no_task_textView"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="Add Task"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppinsbold"
+        android:backgroundTint="#4879C5"
+        android:background="@drawable/button_corners"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/ic_input_add" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- font -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/poppinsbold</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
+    </style>
+
+    <!--TimePicker-->
+    <style name="CustomTimePicker" parent="@android:style/Widget.Material.Light.TimePicker">
+        <item name="android:headerBackground">#4879C5</item>
+        <item name="android:numbersTextColor">@android:color/black</item>
+        <item name="android:numbersBackgroundColor">#e0e0e0</item>
+        <item name="android:numbersSelectorColor">#3783F5</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:timePickerStyle">@style/CustomTimePicker</item>
+    </style>
+
+    <!-- checkbox-->
+    <style name="color_checkbox" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#4879C5</item>
+    </style>
+
+</resources>
